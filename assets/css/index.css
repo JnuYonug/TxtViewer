@@ -45,6 +45,8 @@ main > div {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 main > div > h1 {
     font-size: 7.2rem;
@@ -53,6 +55,8 @@ main > div > button {
     position: absolute;
     left: 50%; 
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     width: 180px;
     padding: 7px 0;
     font-size: 1.8rem;
@@ -87,6 +91,11 @@ footer > address {
     header > nav > ul > li {
         display: inline-block !important;
     }
+    main > div {
+        transform: translate(-50%, -65%); 
+        -webkit-transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+    }
     footer {
         font-size: 1.1rem;
     }
@@ -97,4 +106,5 @@ footer > address {
         font-size: 1.5rem;
         padding: 3px 5px !important;
     }
+    
 }
